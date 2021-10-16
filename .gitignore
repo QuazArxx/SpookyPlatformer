@@ -1,3 +1,4 @@
+.DS_Store
 /.vscode
 /Library
 /Logs
@@ -6,7 +7,11 @@
 /obj
 .vsconfig
 Assembly-CSharp.csproj
+Assembly-CSharp-Debug.json
+Assembly-CSharp.dll.hash
+/Temp
 Side Scroller.sln
+Platformer.sln
 Unity.2D.Path.Editor.csproj
 Unity.2D.Psdimporter.Editor.csproj
 Unity.2D.Sprite.Editor.csproj
@@ -27,3 +32,4 @@ UnityEngine.TestRunner.csproj
 UnityEngine.TestRunner.Player.csproj
 UnityEngine.UI.csproj
 UnityEngine.UI.Player.csproj
+UserPrefs.xml
