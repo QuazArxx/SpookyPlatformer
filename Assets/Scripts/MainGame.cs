@@ -6,6 +6,7 @@ public class MainGame : MonoBehaviour
 {
     public Transform player;
     public Vector2 PlayerStart;
+    public float lives;
 
     // Start is called before the first frame update
     void Start()
@@ -13,6 +14,8 @@ public class MainGame : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
         PlayerStart = new Vector2(player.position.x, player.position.y);
+
+        lives = GlobalControl.Instance.lives;
     }
 
     // Update is called once per frame
@@ -23,5 +26,10 @@ public class MainGame : MonoBehaviour
         temp.x = player.position.x;
 
         transform.position = temp;
+    }
+
+    public void SavePlayer()
+    {
+        GlobalControl.Instance.lives = lives;
     }
 }
