@@ -17,6 +17,8 @@ public class LifeCounter : MonoBehaviour
     {
         mainGame = GetComponent<MainGame>();
 
+        gameSetup._lives = 3;
+
         print(gameSetup._lives);
     }
 
