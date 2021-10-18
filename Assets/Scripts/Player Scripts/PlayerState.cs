@@ -18,7 +18,9 @@ public class PlayerState : MonoBehaviour
 
     void Update()
     {
-        LivesCounter.text = "Lives: " + PlayerStatistics.Lives;
+        if (PlayerStatistics.Lives >= 0) {
+            LivesCounter.text = "Lives: " + PlayerStatistics.Lives;
+        }
     }
 
     void OnTriggerEnter2D (Collider2D other)
@@ -29,7 +31,6 @@ public class PlayerState : MonoBehaviour
             {
                 startPosition.player.position = startPosition.PlayerStart;
                 PlayerStatistics.Lives--;
-                print(PlayerStatistics.Lives);
             }
             else
             {
