@@ -9,15 +9,11 @@ public class Player : MonoBehaviour
     bool isGrounded;
 
     Rigidbody2D rb;
-    StartPosition startPosition;
-
-    public PlayerStatistics localPlayerData = new PlayerStatistics();
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        startPosition = GetComponent<StartPosition>();
     }
 
     // Update is called once per frame

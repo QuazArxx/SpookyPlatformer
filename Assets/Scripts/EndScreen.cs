@@ -6,13 +6,12 @@ using UnityEngine.UI;
 public class EndScreen : MonoBehaviour
 {
     public Text EndText;
-    public PlayerStatistics localPlayerData = new PlayerStatistics();
 
     void Awake()
     {
-        print("Lives: " + localPlayerData.lives.ToString());
+        print("Lives: " + PlayerStatistics.Lives.ToString());
 
-        if (localPlayerData.lives == 0) 
+        if (PlayerStatistics.Lives < 0) 
         {
             EndText.text = "You ran out of lives!\nTry again?";
         }

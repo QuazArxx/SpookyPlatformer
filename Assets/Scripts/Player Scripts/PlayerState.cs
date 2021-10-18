@@ -6,41 +6,35 @@ using UnityEngine.UI;
 
 public class PlayerState : MonoBehaviour
 {
-    public PlayerStatistics localPlayerData = new PlayerStatistics();
-
     StartPosition startPosition;
 
     public Text LivesCounter;
 
-    void Awake()
+    void Start()
     {
         startPosition = GetComponent<StartPosition>();
+        PlayerStatistics.Lives = 3;
     }
 
     void Update()
     {
-        LivesCounter.text = "Lives: " + localPlayerData.lives;
-    }
-
-    public void SavePlayer()
-    {
-        GlobalControl.Instance.savedPlayerData = localPlayerData;
+        LivesCounter.text = "Lives: " + PlayerStatistics.Lives;
     }
 
     void OnTriggerEnter2D (Collider2D other)
     {
         if (other.gameObject.tag == "OutOfBounds")
         {
-            if (localPlayerData.lives > 0) 
+            if (PlayerStatistics.Lives > 0) 
             {
                 startPosition.player.position = startPosition.PlayerStart;
-                localPlayerData.lives--;
-                print(localPlayerData.lives);
+                PlayerStatistics.Lives--;
+                print(PlayerStatistics.Lives);
             }
             else
             {
                 SceneManager.LoadScene("End Screen", LoadSceneMode.Single);
-                localPlayerData.lives--;
+                PlayerStatistics.Lives--;
             }
         }    
     }

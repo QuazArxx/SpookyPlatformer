@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStatistics
+public static class PlayerStatistics
 {
-    public float lives = 3;
+    public static int Lives { get; set; }
 }
