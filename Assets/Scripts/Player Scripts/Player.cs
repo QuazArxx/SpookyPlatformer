@@ -48,7 +48,24 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Ground")
         {
-            isGrounded = true;
+            foreach(ContactPoint2D hitPos in other.contacts)
+            {
+                Debug.Log(hitPos.normal);
+                if (hitPos.normal.y == 1) {
+                    isGrounded = true;
+                }
+            }
+        }
+        else if (other.gameObject.tag == "Enemy")
+        {
+            foreach(ContactPoint2D hitPos in other.contacts)
+            {
+                Debug.Log(hitPos.normal);
+                if (hitPos.normal.y > 0)
+                {
+                    Destroy(other.gameObject);
+                }
+            }
         }
     }
 
