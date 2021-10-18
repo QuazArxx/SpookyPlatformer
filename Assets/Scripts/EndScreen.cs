@@ -9,8 +9,6 @@ public class EndScreen : MonoBehaviour
 
     void Awake()
     {
-        print("Lives: " + PlayerStatistics.Lives.ToString());
-
         if (PlayerStatistics.Lives < 0) 
         {
             EndText.text = "You ran out of lives!\nTry again?";
@@ -19,6 +17,5 @@ public class EndScreen : MonoBehaviour
         {
             EndText.text = "You won! Play again?";
         }
-        
     }
 }
