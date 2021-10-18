@@ -6,7 +6,7 @@ public class GlobalControl : MonoBehaviour
 {
     public static GlobalControl Instance;
 
-    public float lives;
+    public PlayerStatistics savedPlayerData = new PlayerStatistics();
 
     void Awake()
     {
@@ -19,16 +19,5 @@ public class GlobalControl : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

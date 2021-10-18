@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: -1043934188257348444}
   - component: {fileID: -5185442116081799956}
   - component: {fileID: -8430858755302015175}
+  - component: {fileID: 797004245882116992}
+  - component: {fileID: 6264514638378678446}
   m_Layer: 0
   m_Name: Mario 8Bit
   m_TagString: Player
@@ -97,7 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e471d7ff7ea7514439eef1f30d21ebc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpHeight: 5
 --- !u!50 &-5185442116081799956
 Rigidbody2D:
   serializedVersion: 4
@@ -145,3 +146,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.33}
   m_EdgeRadius: 0
+--- !u!114 &797004245882116992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2605832994581065846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a5b42768dc86546a479f8199060785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2918551995329113092}
+  PlayerStart: {x: 0, y: 0}
+--- !u!114 &6264514638378678446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2605832994581065846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bedc4794acdb5564ba7f9e397fd4d2c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
