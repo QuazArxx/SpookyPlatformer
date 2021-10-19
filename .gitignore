@@ -1,15 +1,15 @@
 .DS_Store
+/.vs
 /.vscode
 /Library
 /Logs
 /Packages
+/Temp
 /UserSettings
 /obj
 .vsconfig
 Assembly-CSharp.csproj
-Assembly-CSharp-Debug.json
-Assembly-CSharp.dll.hash
-/Temp
+Assembly-CSharp.Player.csproj
 Side Scroller.sln
 Platformer.sln
 Unity.2D.Path.Editor.csproj
@@ -22,8 +22,10 @@ Unity.PlasticSCM.Editor.csproj
 Unity.Rider.Editor.csproj
 Unity.TextMeshPro.csproj
 Unity.TextMeshPro.Editor.csproj
+Unity.TextMeshPro.Player.csproj
 Unity.Timeline.csproj
 Unity.Timeline.Editor.csproj
+Unity.Timeline.Player.csproj
 Unity.VisualStudio.Editor.csproj
 Unity.VSCode.Editor.csproj
 UnityEditor.TestRunner.csproj
@@ -32,4 +34,3 @@ UnityEngine.TestRunner.csproj
 UnityEngine.TestRunner.Player.csproj
 UnityEngine.UI.csproj
 UnityEngine.UI.Player.csproj
-UserPrefs.xml
